@@ -6,4 +6,7 @@ tags:
   - tag: go
   - tag: test
 inputs:
-  - name: field_to_ingest
+  - name: host
+  - name: username
+  - name: password
+  - name: accountId
