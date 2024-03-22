@@ -13,6 +13,7 @@ func produceMessage(inputs map[string]string, headers map[string]string, message
 	accountId, _ := strconv.Atoi(inputs["accountId"])
 	conn, err := mem.Connect(inputs["host"], inputs["username"], mem.Password(inputs["password"]), mem.AccountId(accountId))
 	if err != nil {
+		fmt.Printf("Could not connect to memphis: %v", err)
 		os.Exit(1)
 	}
 	defer conn.Close()
