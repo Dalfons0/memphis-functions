@@ -1,0 +1,9 @@
+function_name: router-memphis
+description: ""
+runtime: go
+tags:
+  - tag: json
+  - tag: go
+  - tag: test
+inputs:
+  - name: field_to_ingest
